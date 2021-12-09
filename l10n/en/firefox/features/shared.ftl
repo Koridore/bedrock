@@ -20,3 +20,17 @@ features-shared-fingerprinter-blocking = Fingerprinter Blocking
 features-shared-translate-the-web = Translate the web
 features-shared-picture-in-picture = Picture-in-Picture
 brand-name-firefox = { -brand-name-firefox }
+
+features-shared-firefox-features = { -brand-name-firefox } Features
+features-shared-related-articles = Related Articles
+features-shared-was-this-article-helpful = Was this article helpful?
+
+# Used as an accessible label in a voting form
+features-shared-helpful = Helpful
+
+# Used as an accessible label in a voting form
+features-shared-not-helpful = Not helpful
+
+features-shared-footer-cta-title = A compelling CTA for Firefox
+features-shared-footer-cta-desc = Some additional blurb about how great Firefox is and why you should use it.
+features-shared-footer-cta = Download Firefox

@@ -1,0 +1,20 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/features/new/base-article.html" %}
+
+{% block article_title_short %}Firefox Add-ons{% endblock %}
+{% block article_title %}Browser extensions (also known as Firefox Add-ons){% endblock %}
+
+{% block article_content %}
+<p>Extensions are extra features you can download to add more functionality and
+  tools to your browser. They’re kinda like apps for your browser.</p>
+
+<p>You can find Firefox Add-Ons that <a href="{{ url('firefox.facebookcontainer.index') }}">stop Facebook from tracking you around the
+  web</a>, <a href="https://addons.mozilla.org/firefox/addon/simple-translate/">translate text into other languages</a>,
+  <a href="https://addons.mozilla.org/firefox/addon/languagetool/">check your spelling or grammar</a> or
+  <a href="{{ url('firefox.features.new.customize') }}">spruce up the way your browser looks</a>.</p>
+{% endblock article_content %}

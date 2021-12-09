@@ -1,0 +1,30 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/features/new/base-article.html" %}
+
+{% block article_title %}Customize your browser{% endblock %}
+
+{% block article_content %}
+<p>Browser themes let you choose the color scheme or background image of your
+  Firefox toolbar. They change the color of menus and Firefox system pages.</p>
+
+<p>Firefox comes with a default system theme and is preloaded with light, dark
+  and other colorful themes.</p>
+
+<figure class="c-article-figure">
+  <img src="{{ static('img/firefox/features/new/fpo.jpg') }}" alt="">
+</figure>
+
+<p>Browse the <a href="https://addons.mozilla.org/firefox/search/?sort=rating&type=statictheme">top-rated</a>,
+  <a href="https://addons.mozilla.org/firefox/search/?sort=hotness&type=statictheme">trending</a>
+  and <a href="https://addons.mozilla.org/firefox/search/?promoted=recommended&sort=random&type=statictheme">most recommended</a>
+  themes at <a href="https://addons.mozilla.org/">addons.mozilla.org</a>.
+  Or look for themes by category, including <a href="https://addons.mozilla.org/firefox/themes/category/music/">music</a>,
+  <a href="https://addons.mozilla.org/firefox/themes/category/seasonal/">seasonal</a>,
+  <a href="https://addons.mozilla.org/firefox/themes/category/sports/">sports</a>,
+  and <a href="https://addons.mozilla.org/firefox/themes/category/nature/">nature</a>.</p>
+{% endblock article_content %}

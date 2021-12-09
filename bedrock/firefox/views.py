@@ -1057,3 +1057,99 @@ class FirefoxContentful(L10nTemplateView):
         template = "firefox/contentful-all.html"
 
         return l10n_utils.render(self.request, template, context, **response_kwargs)
+
+
+class FeaturesIndexView(L10nTemplateView):
+
+    ftl_files_map = {
+        "firefox/features/index.html": ["firefox/features/index", "firefox/features/shared"],
+        "firefox/features/new/index.html": ["firefox/features/index-2023", "firefox/features/shared"],
+    }
+
+    def get_template_names(self):
+        if ftl_file_is_active("firefox/features/index-2023"):
+            template = "firefox/features/new/index.html"
+        else:
+            template = "firefox/features/index.html"
+
+        return [template]
+
+
+class FeaturesFastView(L10nTemplateView):
+
+    ftl_files_map = {
+        "firefox/features/fast.html": ["firefox/features/fast", "firefox/features/shared"],
+        "firefox/features/new/fast.html": ["firefox/features/fast-2023", "firefox/features/shared"],
+    }
+
+    def get_template_names(self):
+        if ftl_file_is_active("firefox/features/fast-2023"):
+            template = "firefox/features/new/fast.html"
+        else:
+            template = "firefox/features/fast.html"
+
+        return [template]
+
+
+class FeaturesPasswordManagerView(L10nTemplateView):
+
+    ftl_files_map = {
+        "firefox/features/password-manager.html": ["firefox/features/fast", "firefox/features/shared"],
+        "firefox/features/new/password-manager.html": ["firefox/features/password-manager-2023", "firefox/features/shared"],
+    }
+
+    def get_template_names(self):
+        if ftl_file_is_active("firefox/features/password-manager-2023"):
+            template = "firefox/features/new/password-manager.html"
+        else:
+            template = "firefox/features/password-manager.html"
+
+        return [template]
+
+
+class FeaturesSyncView(L10nTemplateView):
+
+    ftl_files_map = {
+        "firefox/sync.html": ["firefox/sync"],
+        "firefox/features/new/sync.html": ["firefox/features/sync-2023", "firefox/features/shared"],
+    }
+
+    def get_template_names(self):
+        if ftl_file_is_active("firefox/features/sync-2023"):
+            template = "firefox/features/new/sync.html"
+        else:
+            template = "firefox/sync.html"
+
+        return [template]
+
+
+class FeaturesBookmarksView(L10nTemplateView):
+
+    ftl_files_map = {
+        "firefox/features/bookmarks.html": ["firefox/features/bookmarks", "firefox/features/shared"],
+        "firefox/features/new/bookmarks.html": ["firefox/features/bookmarks-2023", "firefox/features/shared"],
+    }
+
+    def get_template_names(self):
+        if ftl_file_is_active("firefox/features/bookmarks-2023"):
+            template = "firefox/features/new/bookmarks.html"
+        else:
+            template = "firefox/features/bookmarks.html"
+
+        return [template]
+
+
+class FeaturesPrivateBrowsingView(L10nTemplateView):
+
+    ftl_files_map = {
+        "firefox/features/private-browsing.html": ["firefox/features/private-browsing", "firefox/features/shared"],
+        "firefox/features/new/private-browsing.html": ["firefox/features/private-browsing-2023", "firefox/features/shared"],
+    }
+
+    def get_template_names(self):
+        if ftl_file_is_active("firefox/features/private-browsing-2023"):
+            template = "firefox/features/new/private-browsing.html"
+        else:
+            template = "firefox/features/private-browsing.html"
+
+        return [template]

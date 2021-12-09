@@ -1,0 +1,32 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/features/new/base-article.html" %}
+
+{% block article_title %}Is Firefox a private browser?{% endblock %}
+
+{% block article_content %}
+<p>Yes. Firefox protects your privacy with features like
+  <a href="{{ url('firefox.features.private-browsing') }}">Private Browsing</a>.
+  It allows you to keep your browsing history and passwords private, even when
+  using a device that you share with other people, such as a home computer or iPad.</p>
+
+<p>Firefox also protects your privacy with
+  <a href="https://support.mozilla.org/kb/enhanced-tracking-protection-firefox-desktop">Enhanced Tracking Protection</a>.</p>
+
+<p><em>Sidenote:</em> We are not big tech. We do things differently. Being independent
+  (no shareholders) allows us to put people first, before profit. Unlike other
+  companies, we don’t sell access to your data.</p>
+
+<h2>What information does Firefox collect?</h2>
+<p>Mozilla (the maker of Firefox) takes privacy very seriously.
+  <strong>Very seriously</strong>. In fact, every Firefox product we make honors
+  our <a href="{{ url('firefox.privacy.index') }}">Personal Data Promise</a>:
+  Take less. Keep it safe. No secrets.</p>
+
+<p>Read <a href="{{ url('privacy.notices.firefox') }}">Firefox’s Privacy Notice</a>
+  for more info. Seriously, check it out. It’s in normal-sized font and everything.</p>
+{% endblock article_content %}

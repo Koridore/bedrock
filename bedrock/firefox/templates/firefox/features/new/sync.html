@@ -1,0 +1,24 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/features/new/base-article.html" %}
+
+{% block article_title %}Firefox browser sync{% endblock %}
+
+{% block article_content %}
+<p>With Firefox, you can pick up where you left off when you switch from desktop
+  computer to mobile phone to tablet.</p>
+
+<p>Firefox lets you see your bookmarks, but also your saved passwords and logins,
+  no matter which device you’re using.</p>
+
+<p><a href="{{ url('firefox.accounts') }}">Sign up for a Firefox account</a>,
+  and you’ll be able to see your saved information like search history, recently
+  closed tabs, bookmarks and logins on any device while using your Firefox
+  browser. All of your data is encrypted on our servers, so only you can access
+  it — we don’t sell it to advertisers, because that would go against our
+  <a href="{{ url('firefox.privacy.index') }}">data privacy promise</a>.</p>
+{% endblock article_content %}

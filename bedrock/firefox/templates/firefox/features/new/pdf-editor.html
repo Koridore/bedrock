@@ -1,0 +1,45 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/features/new/base-article.html" %}
+
+{% block article_title_short %}PDF Editor{% endblock %}
+{% block article_title %}Add text to PDFs with Firefox PDF Editor{% endblock %}
+
+{% block article_content %}
+<p>If you need to add stuff to a PDF document, now you can do that online with
+  Firefox. Open the PDF in Firefox, and simply click the Text or Draw buttons
+  in the upper right corner to make changes to your document. Download the file
+  to save it with your changes.</p>
+
+<h2>Fill in forms online without printing and scanning</h2>
+<p>We’ve all faced this: you need to fill in a form that is a PDF, but it isn’t
+  editable. In the past, your only option was to print it on a dead tree, add
+  things with ink, and then scan it back into your computer.</p>
+
+<p>No more! Now, all you need to do is edit the PDF online with Firefox, save
+  it, and email it from your computer.</p>
+
+<h2>Add text</h2>
+
+<p>Open the PDF in Firefox. Click the Text button to choose a color and text
+  size before selecting where on the document you wish to add text. It’s that
+  easy!</p>
+
+<figure class="c-article-figure">
+  <img src="{{ static('img/firefox/features/new/fpo.jpg') }}" alt="">
+</figure>
+
+<h2>Add drawings (or your signature)</h2>
+
+<p>Open the PDF in Firefox. Click the Draw icon to choose a color, thickness
+  and opacity before then being able to draw on the document. It probably won’t
+  be any messier than your usual signature!</p>
+
+<figure class="c-article-figure">
+  <img src="{{ static('img/firefox/features/new/fpo.jpg') }}" alt="">
+</figure>
+{% endblock article_content %}

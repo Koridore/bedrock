@@ -1,0 +1,132 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% from 'macros-protocol.html' import card, call_out %}
+
+{% extends "firefox/base/base-protocol.html" %}
+
+{% block page_css %}
+  {{ css_bundle('firefox-features-new-index')}}
+{% endblock page_css %}
+
+{% block page_title %}{{ ftl('features-index-page-title') }}{% endblock page_title %}
+{% block page_desc %}{{ ftl('features-index-page-description') }}{% endblock page_desc %}
+
+{% block body_class %}features-index{% endblock %}
+
+{% block content %}
+{{ call_out (
+  title=ftl('features-index-firefox-features'),
+  desc=ftl('features-index-main-intro'),
+  class='c-feature-header mzp-t-content-md'
+)}}
+
+<div class="mzp-l-content">
+  <div class="mzp-l-card-half">
+    {{ card (
+      title="Is Firefox a fast browser?",
+      ga_title="Is Firefox a fast browser?",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Persecuti efficiendi est ad, sed etiam dicant argumentum ex.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.fast')
+    )}}
+
+    {{ card (
+      title="Is Firefox a private browser?",
+      ga_title="Is Firefox a private browser?",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Ad iriure antiopam concludaturque vis, ne dicam sanctus eum.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.new.private')
+    )}}
+  </div>
+
+  <div class="mzp-l-card-third">
+    {{ card (
+      title="Free password manager",
+      ga_title="Free password manager",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Persecuti efficiendi est ad, sed etiam dicant argumentum ex.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.password-manager')
+    )}}
+
+    {{ card (
+      title="Firefox browser sync",
+      ga_title="Firefox browser sync",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Ad iriure antiopam concludaturque vis, ne dicam sanctus eum.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.sync')
+    )}}
+
+    {{ card (
+      title="Bookmark manager",
+      ga_title="Bookmark manager",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Mea ut atqui mnesarchum delicatissimi, oporteat accusata pro cu.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.bookmarks')
+    )}}
+
+    {{ card (
+      title="Private browsing mode",
+      ga_title="Private browsing mode",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Has in mutat dolorem expetendis, mei falli postulant in. Nihil eligendi pro ei, diam delenit definitiones has id, diceret adipiscing vim et. Eos ea platonem dissentiet, pri ad choro dictas.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.private-browsing')
+    )}}
+
+    {{ card (
+      title="Customize",
+      ga_title="Customize",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Vivendo luptatum scribentur sea cu, est dicat graeci ne.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.new.customize')
+    )}}
+
+    {{ card (
+      title="Browser extensions and add-ons",
+      ga_title="Browser extensions and add-ons",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.new.add-ons')
+    )}}
+
+    {{ card (
+      title="Pinned browser tabs",
+      ga_title="Pinned browser tabs",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.new.pinned-tabs')
+    )}}
+
+    {{ card (
+      title="Eyedropper tool",
+      ga_title="Eyedropper tool",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.new.eyedropper')
+    )}}
+
+    {{ card (
+      title="PDF editor",
+      ga_title="PDF editor",
+      aspect_ratio="mzp-has-aspect-16-9",
+      desc="A short blurb about this awesome feature. Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.",
+      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
+      link_url=url('firefox.features.new.pdf-editor')
+    )}}
+  </div>
+</div>
+{% endblock content %}
+

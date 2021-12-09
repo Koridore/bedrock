@@ -1,0 +1,24 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/features/new/base-article.html" %}
+
+{% block article_title %}Firefox’s eyedropper tool{% endblock %}
+
+{% block article_content %}
+<p>There are a lot of reasons you might want to know the exact hex color code
+  of a specific color — maybe you build webpages or are a graphic designer. The
+  eyedropper tool, in the desktop version of Firefox, lets you find exact hex
+  color codes just by hovering over any color you see on a web page.</p>
+
+<figure class="c-article-figure">
+  <img src="{{ static('img/firefox/features/new/fpo.jpg') }}" alt="">
+  <figcaption>[screenshot of eyedropper in action]</figcaption>
+</figure>
+
+<p>You can find the eyedropper under “More Tools” in the Firefox toolbar menu
+  (the far left button on your toolbar).</p>
+{% endblock article_content %}

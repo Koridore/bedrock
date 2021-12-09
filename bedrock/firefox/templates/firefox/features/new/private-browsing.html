@@ -1,0 +1,32 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/features/new/base-article.html" %}
+
+{% block article_title %}Private browsing mode{% endblock %}
+
+{% block article_content %}
+<p>You may want to use private browsing if you share a computer with other
+  people or if you want to limit how much data websites can collect about you.
+  Private browsing erases the digital tracks you leave behind when you browse
+  online — think of them like footprints through the woods.</p>
+
+<h2>What does private browsing do?</h2>
+<p>Private browsing mode opens a new browser window. When you close it, your
+  browsing history for that window and any tracking cookies from websites you
+  visited will be erased. Firefox Pro Tip: Don’t forget to close the private
+  browsing window.</p>
+
+<h2>What private browsing doesn’t do</h2>
+<p>Private browsing mode will not delete any new bookmarks you make from a
+  private browsing window, or protect you from malware or viruses. It also
+  doesn’t prevent the websites you visit from seeing where you are physically
+  located or stop your internet service provider from logging what you do.
+  You’ll need a <a href="{{ url('products.vpn.landing') }}">trustworthy VPN</a>
+  for that.</p>
+
+<p>Want to compare Firefox’s private browsing with Chrome’s incognito mode?</p>
+{% endblock article_content %}

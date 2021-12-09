@@ -597,6 +597,18 @@
     },
     {
       "files": [
+        "css/firefox/features/new/index.scss"
+      ],
+      "name": "firefox-features-new-index"
+    },
+    {
+      "files": [
+        "css/firefox/features/new/article.scss"
+      ],
+      "name": "firefox-features-new-article"
+    },
+    {
+      "files": [
         "css/firefox/unsupported-systems.scss"
       ],
       "name": "firefox_unsupported_systems"
@@ -1403,6 +1415,12 @@
         "js/firefox/features/tips/tips-youtube.js"
       ],
       "name": "firefox_tips"
+    },
+    {
+      "files": [
+        "js/firefox/features/features-article.es6.js"
+      ],
+      "name": "firefox_features_new_article"
     },
     {
       "files": [

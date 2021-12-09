@@ -1,0 +1,36 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/features/new/base-article.html" %}
+
+{% block article_title %}Pinned browser tabs{% endblock %}
+
+{% block article_content %}
+<p>Pinning a tab in Firefox allows you to keep your favorite sites always open
+  and a click away. They’ll open automatically when you start Firefox. We’ve
+  found them especially useful for keeping things like email and calendar
+  websites always at hand.</p>
+
+<figure class="c-article-figure">
+  <img src="{{ static('img/firefox/features/new/fpo.jpg') }}" alt="">
+  <figcaption>[screenshot of pinned tabs goes here]</figcaption>
+</figure>
+
+<p>They’re small, and you can’t close them accidentally because they don’t have
+  a close button. Instead, you have to unpin them.</p>
+
+<p>You can see when your pinned tabs are updated, for example, if you get a new
+  email.</p>
+
+<figure class="c-article-figure">
+  <img src="{{ static('img/firefox/features/new/fpo.jpg') }}" alt="">
+  <figcaption>[image of Gmail icon with number?]</figcaption>
+</figure>
+
+<p>If you click on a link from within your pinned tab, Firefox will automatically
+  open the link in a separate, new tab so your pinned tab lives on forever (or
+  until you unpin it).</p>
+{% endblock article_content %}

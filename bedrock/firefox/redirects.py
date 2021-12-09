@@ -83,7 +83,7 @@ redirectpatterns = (
     redirect(r"^firefox/aurora/(?P<page>all|notes|system-requirements)/?$", "/firefox/developer/{page}/"),
     redirect(r"^firefox/organizations/all\.html$", "firefox.all", anchor="product-desktop-esr"),
     # bug 729329
-    redirect(r"^mobile/sync", "firefox.sync"),
+    redirect(r"^mobile/sync", "firefox.features.sync"),
     # bug 882845
     redirect(r"^firefox/toolkit/download-to-your-devices", "firefox.new"),
     # bug 1014823
@@ -116,7 +116,7 @@ redirectpatterns = (
     redirect(r"^products/?$", "firefox"),
     # Bug 1110927
     redirect(r"^(products/)?firefox/start/central\.html$", "firefox.new"),
-    redirect(r"^firefox/sync/firstrun\.html$", "firefox.sync"),
+    redirect(r"^firefox/sync/firstrun\.html$", "firefox.features.sync"),
     # Bug 920212
     redirect(r"^firefox/fx(/.*)?", "firefox"),
     # Bug 979531, 1003727, 979664, 979654, 979660
@@ -239,7 +239,7 @@ redirectpatterns = (
     # Bug 1239863, 1329931
     redirect(r"^firefox/os(/.*)?$", "https://support.mozilla.org/products/firefox-os"),
     # Bug 1252332
-    redirect(r"^sync/?$", "firefox.sync"),
+    redirect(r"^sync/?$", "firefox.features.sync"),
     # Bug 424204
     redirect(r"^firefox/help/?$", "https://support.mozilla.org/"),
     redirect(r"^fxandroid/?$", "firefox.browsers.mobile.android"),
@@ -499,7 +499,8 @@ redirectpatterns = (
     # fxa
     redirect(r"^firefox/accounts/features/?", "firefox.accounts"),
     # issue 9490
-    redirect(r"^firefox/features/sync/?", "firefox.sync"),
+    # nope, moving this back to features
+    redirect(r"^firefox/sync/?", "firefox.features.sync"),
     # bug 1577449
     redirect(r"^firefox/features/send-tabs/?", "https://support.mozilla.org/kb/send-tab-firefox-desktop-other-devices"),
     # issue 6512
