@@ -9,6 +9,7 @@ $image-path: '/media/protocol/img';
 @import '~@mozilla-protocol/core/protocol/css/components/call-out';
 @import '~@mozilla-protocol/core/protocol/css/components/card';
 @import '~@mozilla-protocol/core/protocol/css/templates/card-layout';
+@import '~@mozilla-protocol/core/protocol/css/templates/multi-column';
 @import '~@mozilla-protocol/core/protocol/css/components/breadcrumb';
 
 .c-feature-header {
@@ -45,120 +46,46 @@ $image-path: '/media/protocol/img';
     }
 }
 
-.resource-center-cta {
-    margin-bottom: $spacing-md;
-}
+.c-feature-item {
+    margin-bottom: $layout-xs;
 
-.resource-center-split-media .mzp-c-split-media-asset {
-    // smaller image on small breakpoints
-    max-width: 80%;
+    a {
+        color: get-theme('body-text-color');
+        display: block;
+        border: 1px solid $color-light-gray-30;
+        border-radius: $border-radius-md;
+        padding: $spacing-md;
+        text-decoration: none;
+        transition: border-color 150ms ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: get-theme('link-color-hover');
+            color: get-theme('body-text-color');
+
+            .c-feature-item-title {
+                text-decoration: underline;
+            }
+
+            .c-feature-item-cta {
+                color: get-theme('link-color-hover');
+            }
+        }
+    }
 
     @media #{$mq-md} {
-        max-width: 100%;
+        display: contents;
+        margin-bottom: 0;
     }
 }
 
-.resource-center-cta-title {
-    margin-bottom: $spacing-2xl;
+.c-feature-item-title {
+    @include text-title-2xs;
 }
 
-.resource-center-cta-desc {
-    @include text-body-sm;
-    @include font-base;
-
-    // this color will be added to protocol, this should be updated once its availible as a token
-    color: #666;
-}
-
-.vpn-article-container {
-    background: url('/media/img/products/vpn/resource-center/resource_center_article_gradient.svg');
-    background-repeat: no-repeat;
-    background-size: auto;
-
-    // The background image will cut off on larger viewports
-    @media #{$mq-lg} {
-        background-size: contain;
-    }
-}
-
-.vpn-article {
-    background-color: $color-white;
-    box-sizing: border-box;
-    padding: $layout-sm $layout-md 0 $layout-md;
-
-    .vpn-article-category {
-        @include text-body-xs;
-        background: $color-black;
-        border-radius: $border-radius-sm;
-        color: $color-white;
-        display: inline-block;
-        font-weight: 300;
-        padding: $spacing-xs $spacing-md $spacing-xs $spacing-md;
-        text-transform: uppercase;
-    }
-
-    .vpn-article-date {
-        align-items: center;
-        display: flex;
-
-        .date-icon {
-            @include bidi(((margin-right, $spacing-sm, margin-left, $spacing-sm),));
-        }
-    }
-
-    h3 {
-        @include text-title-sm;
-    }
-
-    img {
-        margin: 0 0 $spacing-lg;
-    }
-}
-
-.vpn-article-bottom-title {
-    margin-bottom: $spacing-xl;
-}
-
-.vpn-article-hr {
-    margin: $spacing-xl 0;
-}
-
-.vpn-c-vote {
-    margin-top: $layout-xl;
-    text-align: center;
-
-    .vpn-c-vote-btn-container {
-        @include bidi(((margin-right, $layout-lg, margin-left, $layout-lg),));
-        position: relative;
-
-        .vpn-c-vote-btn {
-            background: none;
-            border: none;
-            color: $color-moz-dark-gray;
-            cursor: pointer;
-            fill: currentColor;
-            height: $layout-sm + 6px;
-            width: $layout-md - 6px;
-
-            &.down {
-                @include bidi(((margin-left, $spacing-sm, margin-right, $spacing-sm),));
-                position: absolute;
-                top: 13px;
-            }
-
-            &[aria-pressed='true'] {
-                color: $color-blue-50;
-                fill: currentColor;
-            }
-
-            span {
-                @include visually-hidden;
-            }
-
-            svg,
-            path {
-                pointer-events: none;
-            }
-        }
-    }
+.c-feature-item-cta {
+    margin: 0;
+    color: get-theme('link-color');
+    text-decoration: underline;
 }

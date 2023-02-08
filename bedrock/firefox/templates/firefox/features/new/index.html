@@ -45,88 +45,72 @@
     )}}
   </div>
 
-  <div class="mzp-l-card-third">
-    {{ card (
-      title="Free password manager",
-      ga_title="Free password manager",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Persecuti efficiendi est ad, sed etiam dicant argumentum ex.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.password-manager')
-    )}}
+  <ul class="mzp-l-columns mzp-t-columns-three">
+    <li class="c-feature-item">
+      <a href="url('firefox.features.password-manager')">
+        <h3 class="c-feature-item-title">Free password manager</h3>
+        <p>A short blurb about this awesome feature. Persecuti efficiendi est ad, sed etiam dicant argumentum ex.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+    <li class="c-feature-item">
+      <a href="url('firefox.features.sync')">
+        <h3 class="c-feature-item-title">Firefox browser sync</h3>
+        <p>A short blurb about this awesome feature. Ad iriure antiopam concludaturque vis, ne dicam sanctus eum.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+    <li class="c-feature-item">
+      <a href="url('firefox.features.bookmarks')">
+        <h3 class="c-feature-item-title">Bookmark manager</h3>
+        <p>Mea ut atqui mnesarchum delicatissimi, oporteat accusata pro cu.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+    <li class="c-feature-item">
+      <a href="url('firefox.features.private-browsing')">
+        <h3 class="c-feature-item-title">Private browsing mode</h3>
+        <p>Has in mutat dolorem expetendis, mei falli postulant in. Nihil eligendi pro ei.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+    <li class="c-feature-item">
+      <a href="url('firefox.features.new.customize')">
+        <h3 class="c-feature-item-title">Customize</h3>
+        <p>Vivendo luptatum scribentur sea cu, est dicat graeci ne.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+    <li class="c-feature-item">
+      <a href="url('firefox.features.new.add-ons')">
+        <h3 class="c-feature-item-title">Browser extensions and add-ons</h3>
+        <p>Duo semper regione tibique in, ad vidit recteque expetendis sed.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+    <li class="c-feature-item">
+      <a href="url('firefox.features.new.pinned-tabs')">
+        <h3 class="c-feature-item-title">Pinned browser tabs</h3>
+        <p>Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+    <li class="c-feature-item">
+      <a href="url('firefox.features.new.eyedropper')">
+        <h3 class="c-feature-item-title">Eyedropper tool</h3>
+        <p>Ut augue exerci vix, mei malis regione corrumpit at.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+    <li class="c-feature-item">
+      <a href="url('firefox.features.new.pdf-editor')">
+        <h3 class="c-feature-item-title">PDF Editor</h3>
+        <p>mei falli postulant in. Nihil eligendi pro ei.</p>
+        <p class="c-feature-item-cta">Read more</p>
+      </a>
+    </li>
+  </ul>
 
-    {{ card (
-      title="Firefox browser sync",
-      ga_title="Firefox browser sync",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Ad iriure antiopam concludaturque vis, ne dicam sanctus eum.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.sync')
-    )}}
-
-    {{ card (
-      title="Bookmark manager",
-      ga_title="Bookmark manager",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Mea ut atqui mnesarchum delicatissimi, oporteat accusata pro cu.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.bookmarks')
-    )}}
-
-    {{ card (
-      title="Private browsing mode",
-      ga_title="Private browsing mode",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Has in mutat dolorem expetendis, mei falli postulant in. Nihil eligendi pro ei, diam delenit definitiones has id, diceret adipiscing vim et. Eos ea platonem dissentiet, pri ad choro dictas.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.private-browsing')
-    )}}
-
-    {{ card (
-      title="Customize",
-      ga_title="Customize",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Vivendo luptatum scribentur sea cu, est dicat graeci ne.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.new.customize')
-    )}}
-
-    {{ card (
-      title="Browser extensions and add-ons",
-      ga_title="Browser extensions and add-ons",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.new.add-ons')
-    )}}
-
-    {{ card (
-      title="Pinned browser tabs",
-      ga_title="Pinned browser tabs",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.new.pinned-tabs')
-    )}}
-
-    {{ card (
-      title="Eyedropper tool",
-      ga_title="Eyedropper tool",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.new.eyedropper')
-    )}}
-
-    {{ card (
-      title="PDF editor",
-      ga_title="PDF editor",
-      aspect_ratio="mzp-has-aspect-16-9",
-      desc="A short blurb about this awesome feature. Ut augue exerci vix, mei malis regione corrumpit at. Duo semper regione tibique in, ad vidit recteque expetendis sed.",
-      image=resp_img('img/firefox/features/new/feature.png', optional_attributes={"loading": "lazy", "class": "mzp-c-card-image"}),
-      link_url=url('firefox.features.new.pdf-editor')
-    )}}
-  </div>
 </div>
 {% endblock content %}
 
