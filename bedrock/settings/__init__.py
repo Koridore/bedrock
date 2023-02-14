@@ -187,6 +187,7 @@ else:
         "cdn-3.convertexperiments.com",
         "logs.convertexperiments.com",
         "images.ctfassets.net",
+        "cdn.matomo.cloud",
     ]
     _csp_script_src = [
         # TODO fix things so that we don't need this
@@ -204,6 +205,7 @@ else:
         "data.track.convertexperiments.com",
         "1003350.track.convertexperiments.com",
         "1003343.track.convertexperiments.com",
+        "cdn.matomo.cloud",
     ]
     _csp_style_src = [
         # TODO fix things so that we don't need this
@@ -233,6 +235,7 @@ else:
         FXA_ENDPOINT,
         "stage.cjms.nonprod.cloudops.mozgcp.net",
         "cjms.services.mozilla.com",
+        "mozmeao.matomo.cloud",
     ]
     _csp_connect_extra_for_dev = []
     _csp_font_src = [
